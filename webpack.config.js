@@ -13,7 +13,7 @@ module.exports = (env) => {
     },
 
     output: {
-      path: path.resolve(__dirname, "dist"),
+      path: path.resolve(__dirname, "docs"),
       filename: "js/[name].[contenthash].bundle.js",
       assetModuleFilename: "imgs/[name][ext]",
       clean: true,
@@ -21,7 +21,7 @@ module.exports = (env) => {
 
     devServer: {
       static: {
-        directory: path.resolve(__dirname, "./dist"),
+        directory: path.resolve(__dirname, "./docs"),
       },
       port: 5001,
     },
